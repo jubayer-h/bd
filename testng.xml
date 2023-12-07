@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <parameter name="browser" value="firefox"></parameter>
-    <parameter name="url" value="https://www.google.com/"></parameter>
-    <test name="p1">
+    <listeners>
+
+        <listener class-name="ListenerPackage.customListener">
+        </listener>
+    </listeners>
+    
+    <test verbose="2" preserve-order="true"
+          name="/Users/jubayerhussain/IdeaProjects/untitled15/src/test/java/ListenerPackage/ExampleOfListener.java">
         <classes>
-            <class name="org.example.parameter1">
-                <!--<methods>
-                <include name="logIn"/>
-                </methods>  -->
+            <class name="ListenerPackage.ExampleOfListener">
+             
             </class>
-        </classes>
-    </test>
-
-
-
-    <test name="p2">
-        <parameter name="browser" value="chrome"></parameter>
-        <parameter name="url" value="https://www.google.com/"></parameter>
-        <classes>
-            <class name="org.example.parameter1"/>
-
         </classes>
     </test>
 </suite>
