@@ -9,6 +9,6 @@ public class Test {
         driver.get("https://www.google.com/");
         System.out.println( "this is the title : "+driver.getTitle());
         driver.close();
-        driver.quit();
+        //driver.quit();
     }
 }
